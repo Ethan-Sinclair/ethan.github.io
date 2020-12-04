@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>HTML</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Ethan Sinclair" />
+    <meta name="description" content="HTML basics" />
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body id="htmlbody">
+    <header>
+        <h1>Hyper-Text Markup Language</h1>
+        <img id="logo" src="images/logo.png" alt="Website logo">
+    </header>
+    <section id="main">
+
+        <h2 id="portfolio">Portfolio of Lab Exercises</h2>
+        <div class="dropdown">
+            <button class="dropbtn" id="HTML">HTML</button>
+            <div class="dropdown-content">
+                <a href="../labs/html/html5-common-elements.html">Common Elements</a>
+                <a href="../labs/html/html5-structural-elements.html">Structural Elements</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" id="CSS">CSS</button>
+            <div class="dropdown-content">
+                <a href="../labs/css/style-page.html">Style Page</a>
+                <a href="../labs/css/style-page-grid.html">Style Page Grid</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" id="JS">JavaScript</button>
+            <div class="dropdown-content">
+                <a href="../labs/javascript/dynamic-shopping-list/shopping-list.html">Dynamic Shopping List</a>
+                <a href="../labs/javascript/silly-story-generator/index.html">Silly Story Generator</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" id="HTTP">HTTP and Security</button>
+            <div class="dropdown-content">
+                <a href="../labs/http-and-security/http-and-security.html">HTTP and Security Questions</a>
+            </div>
+        </div>
+
+
+        <details>
+            <summary>
+                <h2>Details</h2>
+            </summary>
+            <address>
+                <p>Ethan Sinclair</p>
+                <p>c3556451</p>
+                <p>Computer Security</p>
+                <p>Group D</p>
+
+            </address>
+        </details>
+    </section>
+    <nav id="topbar">
+        <ul id="menu">
+            <li>
+                <a href="building-website.html">Home</a>
+            </li>
+
+            <li>
+                <a href="css.html"><abbr title="Cascading Style Sheets">CSS</abbr></a>
+            </li>
+
+            <li>
+                <a href="javascript.html">JavaScript</a>
+            </li>
+
+            <li>
+                <a href="quiz.html">Quiz</a>
+            </li>
+
+        </ul>
+
+    </nav>
+    <section>
+        <div id="info">
+            <h2>What is HTML?</h2>
+            <blockquote cite="https://r2.vlereader.com/Reader?ean=9781449337551"> HTML is not a programming language, it's a markup language. HTML is the language used to create a web page. HTML is used for identifying and describing the components of a document for example headings, paragraphs, lists, images etc. </blockquote>
+            <i>This is a quote taken from 'Learning Web Design: a beginner's guide to HTML, CSS, JavaScript, and web graphics'.</i>
+            <p>The following is an example of HTML code:</p>
+            <img src="images/html-code.png" alt="A block of HTML code">
+            <p>This code is from the structural elements page and shows a variety of HTML tags in use.</p>
+            
+        </div>
+    </section>
+    <article class="page" id="htmlarticle">
+        <div id="p1">
+            <h2>Tags</h2>
+            <p>To write a document in HTML you need to use tags. A tag is encased within 2 inequality signs <b>(&lt; &gt;)</b>, and has a closing tag which has a forward slash <b>(&lt; / &gt;)</b> after the first inequality sign. In HTML there is 3 main 'parent' tags which are <b>html</b>, <b>head</b> and <b>body</b>. The html tag is the parent tag for head and body. The head tag is for metadata such as the title, the link to the CSS file etc. The body tag is for what you want to display on the webpage. Within the head and body tag there is multiple tags you can use and you can find them all <a href="https://www.w3schools.com/TAGS/default.ASP">here</a>.</p>
+            <img class="img" src="images/tag.png" alt="HTML tags">
+
+
+        </div>
+
+        <div id="p2">
+            <h2>Attributes</h2>
+            <p>Attributes are used in HTML to provide additional information about the html tag. Some attributes are used to create hyperlinks using the href attribute. You can also use attributes to create a class or id, these are used to make it easier to edit the tags using CSS. A class is used to group multiple tags into one for CSS to edit whereas the id attribute is for one tag and makes it so CSS can directly edit it. There is many more attributes that you can use and you can find them all <a href="https://www.w3schools.com/tags/ref_attributes.asp">here</a>.</p>
+            <img class="img" src="images/href.png" alt="Image showing href attribute">
+
+        </div>
+
+
+    </article>
+</body>
+
+</html>

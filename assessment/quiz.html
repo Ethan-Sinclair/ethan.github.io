@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Lab exercise html5</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Ethan Sinclair" />
+    <meta name="description" content="Quiz" />
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body id="quizpage">
+    <div id="timer">
+        <button id="clock">Start timer</button>
+        <div id="bar">
+            <div id="progress"></div>
+        </div>
+        <p id="mycounter"></p>
+    </div>
+    <div id="quiz">
+        <div id="input">
+            <label for="item" id="label">Enter as many <b>child elements</b> of the <b>head</b> as you can in 1 minute (Don't include &lt; or &gt;):</label>
+            <input type="text" name="item" id="item">
+            <button id="button">Confirm</button>
+        </div>
+        <ul id="answers">
+        </ul>
+    </div>
+    <header>
+        <h1 id="quiztitle">Quiz</h1>
+        <img id="logo" src="images/logo.png" alt="Website logo">
+    </header>
+    <section id="main">
+        <h2 id="portfolio">Portfolio of Lab Exercises</h2>
+        <div class="dropdown">
+            <button class="dropbtn" id="HTML">HTML</button>
+            <div class="dropdown-content">
+                <a href="../labs/html/html5-common-elements.html">Common Elements</a>
+                <a href="../labs/html/html5-structural-elements.html">Structural Elements</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" id="CSS">CSS</button>
+            <div class="dropdown-content">
+                <a href="../labs/css/style-page.html">Style Page</a>
+                <a href="../labs/css/style-page-grid.html">Style Page Grid</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" id="JS">JavaScript</button>
+            <div class="dropdown-content">
+                <a href="../labs/javascript/dynamic-shopping-list/shopping-list.html">Dynamic Shopping List</a>
+                <a href="../labs/javascript/silly-story-generator/index.html">Silly Story Generator</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" id="HTTP">HTTP and Security</button>
+            <div class="dropdown-content">
+                <a href="../labs/http-and-security/http-and-security.html">HTTP and Security Questions</a>
+            </div>
+        </div>
+
+
+
+        <details>
+            <summary>
+                <h2>Details</h2>
+            </summary>
+            <address>
+                <p>Ethan Sinclair</p>
+                <p>c3556451</p>
+                <p>Computer Security</p>
+                <p>Group D</p>
+
+            </address>
+        </details>
+
+    </section>
+    <div id="quiznav">
+        <div>
+            <a href="building-website.html" id="home">Home</a>
+        </div>
+
+        <div>
+            <a href="html.html"><abbr title="Hypertext Markup Language" id="htmlpage">HTML</abbr></a>
+        </div>
+
+        <div>
+            <a href="css.html"><abbr title="Cascading Style Sheets" id="csspage">CSS</abbr></a>
+        </div>
+
+        <div>
+            <a href="javascript.html" id="jspage">JavaScript</a>
+        </div>
+
+    </div>
+
+    <script src="script/script.js"></script>
+</body>
+
+</html>

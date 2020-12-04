@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>HTTP and Security</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Ethan Sinclair" />
+    <meta name="description" content="HTML basics" />
+</head>
+
+<body>
+    <h1>HTTP and Security Questions</h1>
+    <div>
+        <h2>What is the Hypertext Transfer Protocol (HTTP)?</h2>
+        <p>HTTP is a protocol which allows you to fetch resources, for example HTML documents.</p>
+    </div>
+
+    <div>
+        <h2>Why is HTTP called a stateless protocol?</h2>
+        <p>As there isn't a link between two requests being successfully carried out on the same connection. In order for this link to be established the use of cookies is required.</p>
+    </div>
+
+    <div>
+        <h2>Describe the three phases of establishing a session using client-server protocols such as HTTP</h2>
+        <p>The first phase of establishing a session using client-server protocols is for the client to establish a connection. To open a connection in the HTTP the client has to initiate a connection in the underlying transport layer, usually the TCP. The second phase, of establishing a session using client-server protocols, is when the client sends its request and waits for an answer. A client request is divided into 3 parts. The request must first have a request method, this could be the documents path or the HTTP protocol version. Next, there's a HTTP header which gives the server information. The last part contains further data and isn't required. The final phase of establishing a session using client-server protocol is the server processing the request, sending an answer with a status code and the appropriate data. The server response consists of aknowledging the version of HTTP used, getting the information from the HTTP header and then a final data block containing optional data.</p>
+    </div>
+
+    <div>
+        <h2>Describe the parameters on a get and post request.</h2>
+        <p>The parameters on a get and post request are located in the URL. For the get request the parameters are separated by an "&" sign and are added to the URL by the use of a "?". The post request sends additional data to the server in the message body of the HTTP request, making it more secure as it can't be bookmarked and isn't stored in the browser history.</p>
+    </div>
+
+    <div>
+        <h2>What are the HTTP response status code and What do the HTTP status codes, 200, and 404 indicate?</h2>
+        <p>The HTTP response code tells the user whether the request was a success or a failure. The status code 200 indicates that the request was a success. The status code 404 indicates that the request was a failure.</p>
+    </div>
+
+    <div>
+        <h2>What are HTTP cookies? Give an example.</h2>
+        <p>An HTTP cookie is a small piece of data the server sends to the user's web browser. Cookies are usually used to tell if 2 requests come from the same browser. An example of what cookies are used for is session management. Cookies are used for session management by keeping track of logins, shopping carts, games scores etc.</p>
+    </div>
+
+    <div>
+        <h2>Why are cookies a security issue?</h2>
+        <p>Cookies are a security issue as they can be used to steal another users session which, if the user is logged in, could give an attacker access to private information, such as payment details.</p>
+    </div>
+
+    <div>
+        <h2>Describe session hijacking and XSS</h2>
+        <p>Session hijacking is an attack where the user session is taken over by an attacker. The most common method of doing this is by using XSS. XXS is cross-site scripting. The attacker uses this by injecting client-side scripts into web pages causing the users browser to execute code when it loads the page. Without the use of HttpOnly attribute being set in session cookies, those injected scripts can gain access to the session key giving them the information to hijack the session.</p>
+    </div>
+
+    <div>
+        <h2>Describe Cross-site request forgery(CSRF)</h2>
+        <p>Cross-site request forgery (CSRF) is an attack that impersonates a trusted user and sends the website unwanted commands. This could be done by including malicious parameters in the URL.</p>
+    </div>
+
+    <div>
+        <h2>What are Cross-site HTTP requests (CORS) and what requests use CORS?</h2>
+        <p>Cross-origin resource sharing (CORS) is an HTTP header based mechanism that allows a server to indicate any other origins than its own from which a browser should allow the loading of resources. An XMLHttpRequest can use CORS.</p>
+    </div>
+
+
+</body>

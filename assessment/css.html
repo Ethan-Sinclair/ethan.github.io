@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>CSS</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Ethan Sinclair" />
+    <meta name="description" content="CSS basics" />
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <h1>Cascading Style Sheet</h1>
+        <img id="logo" src="images/logo.png" alt="Website logo">
+    </header>
+    <section id="main">
+        <h2 id="portfolio">Portfolio of Lab Exercises</h2>
+        <div class="dropdown">
+            <button class="dropbtn" id="HTML">HTML</button>
+            <div class="dropdown-content">
+                <a href="../labs/html/html5-common-elements.html">Common Elements</a>
+                <a href="../labs/html/html5-structural-elements.html">Structural Elements</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" id="CSS">CSS</button>
+            <div class="dropdown-content">
+                <a href="../labs/css/style-page.html">Style Page</a>
+                <a href="../labs/css/style-page-grid.html">Style Page Grid</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" id="JS">JavaScript</button>
+            <div class="dropdown-content">
+                <a href="../labs/javascript/dynamic-shopping-list/shopping-list.html">Dynamic Shopping List</a>
+                <a href="../labs/javascript/silly-story-generator/index.html">Silly Story Generator</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" id="HTTP">HTTP and Security</button>
+            <div class="dropdown-content">
+                <a href="../labs/http-and-security/http-and-security.html">HTTP and Security Questions</a>
+            </div>
+        </div>
+
+
+
+        <details>
+            <summary>
+                <h2>Details</h2>
+            </summary>
+            <address>
+                <p>Ethan Sinclair</p>
+                <p>c3556451</p>
+                <p>Computer Security</p>
+                <p>Group D</p>
+
+            </address>
+        </details>
+    </section>
+    <nav id="topbar">
+        <ul id="menu">
+            <li>
+                <a href="building-website.html">Home</a>
+            </li>
+            <li>
+                <a href="html.html"><abbr title="Hypertext Markup Language">HTML</abbr></a>
+            </li>
+
+            <li>
+                <a href="javascript.html">JavaScript</a>
+            </li>
+
+            <li>
+                <a href="quiz.html">Quiz</a>
+            </li>
+
+        </ul>
+
+    </nav>
+    <section>
+        <div id="info">
+            <h2>What is CSS?</h2>
+            <p><q cite="https://r2.vlereader.com/Reader?ean=9781449337551">Cascading Style Sheets (CSS) is a language used to define the presentation of documents written in HTML. CSS is used to choose the way the document is displayed to the user.</q><i> This is a quote taken from 'Learning Web Design: a beginner's guide to HTML, CSS, JavaScript, and web graphics'.</i></p>
+
+
+        </div>
+    </section>
+    <article class="page">
+        <div id="p1">
+            <h2>Selectors</h2>
+            <p>Selectors are what CSS uses to reference the tag it is defining and can be the tag itself, the class attribute or the id attribute. When defining the tag the selector only needs to be the name of the tag. When defining a class the selector is <b>.class</b> where class is the name of the class. When defining an id the selector is <b>#id</b> where id is the name of the id. There are other selectors you can use, and they can be found <a href="https://www.w3schools.com/cssref/css_selectors.asp">here</a>.</p>
+            <img class="img" src="images/css-logo.svg" alt="CSS3 logo">
+
+        </div>
+
+        <div id="p2">
+            <h2>Declaration</h2>
+            <p>A declaration in CSS is the indicator of what aspect of the element you are changing such as the colour or width etc. Declarations are made up of both a property and a value, so if you were changing the colour of a element the property would be <b>color</b> and the value would be the colour your changing it to for example <b>blue</b>. There are other declaration you can use, and they can be found <a href="https://www.w3schools.com/cssref/">here</a>.</p>
+            <img class="img" src="images/color.svg" alt="Colour wheel">
+
+        </div>
+
+    </article>
+</body>
+
+</html>
